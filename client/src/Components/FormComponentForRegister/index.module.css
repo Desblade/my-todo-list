@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.formGroup {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.password {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+
+}

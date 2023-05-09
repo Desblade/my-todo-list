@@ -1,0 +1,47 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+    justify-content: flex-end;
+
+}
+
+.fab {
+    cursor: default;
+    width: 120px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.description {
+    word-wrap: break-word;
+    font-size: 25px;
+}
+
+.fab {
+    color: #1976d2;
+    font-size: 20px;
+}
+
+.overdue {
+    color: red;
+}
+
+.fulfilled {
+    color: green;
+}
+
+.default {
+    color: grey;
+}

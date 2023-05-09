@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 380px;
+    padding: 50px;
+    gap: 30px;
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,0.2),
+    0 3px 4px 0 rgba(0,0,0,0.14),
+    0 1px 8px 0 rgba(0,0,0,0.12);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+

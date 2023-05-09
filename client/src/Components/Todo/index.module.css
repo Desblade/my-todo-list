@@ -1,0 +1,13 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 70%;
+    background: #cbdbf5;
+    border: 1px dashed black;
+    border-radius: 20px;
+}
+
+
+

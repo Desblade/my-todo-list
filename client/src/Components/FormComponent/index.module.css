@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.icon {
+    color: grey;
+}
+
+.form__input {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}

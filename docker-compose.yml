@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  proxy:
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/service.conf
+  server:
+    build:
+      context: ./server/
+      dockerfile: ./Dockerfile
+    depends_on:
+      - server-db
+    environment:
+      PORT: 8000
+      DB_HOST: server-db
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_DATABASE: users
+      SECRET_KEY: secret123
+
+  server-db:
+    image: postgres
+    volumes:
+      - db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: users
+
+volumes:
+  db:

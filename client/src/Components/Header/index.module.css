@@ -1,0 +1,11 @@
+.appBar {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.toolBar {
+    display: flex;
+    gap: 20px;
+}
