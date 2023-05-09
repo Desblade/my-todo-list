@@ -1,14 +1,6 @@
 version: '3'
 
 services:
-  proxy:
-    build:
-      context: ./client
-      dockerfile: ./Dockerfile
-    ports:
-      - 80:80
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/service.conf
   server:
     build:
       context: ./server/
@@ -32,6 +24,14 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: users
+  proxy:
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/service.conf
 
 volumes:
   db:
